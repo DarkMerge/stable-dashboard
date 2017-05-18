@@ -2,6 +2,6 @@
 
 > some guy once said:
 
-> "Billi, you can never known, can never known."
+> "Billy, you can never known, can never known."
 
-> sthat guy was Albert Einstein.
+> that guy was Albert Einstein.
