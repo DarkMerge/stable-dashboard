@@ -1,15 +1,21 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Hello from '@/components/Hello';
+
+import Dashboard from '@/components/dashboard/Dashboard.vue';
 
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello,
     },
+    {
+      path: '/dashboard',
+      component: Dashboard,
+    },
+    /*{ name: 'post', path: '/post/:id', component: PostView },
+     { name: 'page', path: '/page/:id', component: PageView }*/
   ],
 });

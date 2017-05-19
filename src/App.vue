@@ -1,23 +1,27 @@
-<template>
-  <div id="app">
-    <img src="./assets/logo.png">
+<template id="template">
+  <div id="layout">
     <router-view></router-view>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'app',
-};
+<script type="text/javascript">
+  export default {
+    template: '#template',
+  };
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500');
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #fff;
+  }
 </style>
